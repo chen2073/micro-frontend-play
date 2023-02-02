@@ -16,7 +16,7 @@ export default defineConfig({
       exposes: {
         './APP': './src/App.vue',
     },
-      shared: ['vue']
+      shared: ['vue', 'pinia']
     }),
   ],
   resolve: {

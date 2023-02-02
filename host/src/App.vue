@@ -15,9 +15,9 @@ const RemoteApp1 = defineAsyncComponent({
   <h1>
     Hello This is host app
   </h1>
-  <!-- <div>Vue Remote Component:
+  <div>Vue Remote Component:
     <RemoteApp1 />
-  </div> -->
+  </div>
   <div>
     React Remote Component:
     <ReactComp />

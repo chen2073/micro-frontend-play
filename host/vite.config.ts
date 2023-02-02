@@ -22,7 +22,7 @@ export default defineConfig({
         remote1: "http://localhost:5001/assets/remoteEntry.js",
         remote2: "http://localhost:5002/assets/remoteEntry.js",
       },
-      shared: ['vue']
+      shared: ['vue', 'pinia']
     }),
   ],
   build: {
