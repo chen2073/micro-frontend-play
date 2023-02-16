@@ -15,8 +15,9 @@ export default defineConfig({
       filename: 'remoteEntry.js',
       exposes: {
         './APP': './src/App.vue',
+        './USERS': './src/components/People.vue',
     },
-      shared: ['vue', 'pinia']
+      shared: ['vue','pinia']
     }),
   ],
   resolve: {

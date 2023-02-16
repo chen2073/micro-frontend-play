@@ -9,6 +9,13 @@ const RemoteApp1 = defineAsyncComponent({
   errorComponent: Error,
   timeout: 3000,
 })
+
+const RemoteUsers = defineAsyncComponent({
+  loader: () => import("remote1/USERS"),
+  delay: 200,
+  errorComponent: Error,
+  timeout: 3000,
+})
 </script>
 
 <template>
@@ -17,9 +24,10 @@ const RemoteApp1 = defineAsyncComponent({
   </h1>
   <div>Vue Remote Component:
     <RemoteApp1 />
+    <!-- <RemoteUsers></RemoteUsers> -->
   </div>
-  <div>
+  <!-- <div>
     React Remote Component:
     <ReactComp />
-  </div>
+  </div> -->
 </template>

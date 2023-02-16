@@ -12,3 +12,16 @@ export const useCounterStore = defineStore('counter', {
     },
   },
 })
+
+export const usePeopleStore = defineStore('People', {
+  state: () => ({
+    users: []
+  }),
+
+  actions: {
+    async fetchUsers() {
+      const res = await fetch('http://localhost:3001/api/users')
+      this.users = await res.json()
+    }
+  },
+})
